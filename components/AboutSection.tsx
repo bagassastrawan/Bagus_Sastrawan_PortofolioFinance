@@ -54,7 +54,7 @@ const AboutSection = () => {
               })}
             </div>
             <Image
-              src="/profile-1.png"
+              src="/avatar.png"
               alt=""
               width={300}
               height={300}
