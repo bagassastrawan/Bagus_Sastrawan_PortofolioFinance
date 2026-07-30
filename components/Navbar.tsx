@@ -111,13 +111,14 @@ export default function Navbar() {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-teal-500 to-emerald-500 group-hover:w-full transition-all duration-300 ease-out" />
                 <span className="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-teal-500 to-emerald-500 group-hover:w-full transition-all duration-300 ease-out delay-75" />
                 {/* Active state indicator */}
-                <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-teal-500 to-emerald-500 transition-all duration-300 [&.active]:w-full" />
+                <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-teal-500 to-emerald-500 transition-all duration-300 [&amp;.active]:w-full" />
               </Link>
             ))}
 
-            {/* CV Download Button - Desktop */}
+            {/* CV Download Button - Desktop (Uncomment jika diperlukan) */}
             {/* <a
-              href="/cv.pdf"
+              href="/CV_Putu_Bagus_Sastrawan.pdf"
+              download="CV_Putu_Bagus_Sastrawan.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-4 inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 shadow-md shadow-teal-500/20 hover:shadow-lg hover:shadow-teal-500/30 transition-all duration-200 transform hover:-translate-y-0.5"
@@ -191,7 +192,8 @@ export default function Navbar() {
             
             {/* CV Download - Mobile */}
             <a
-              href="/cv.pdf"
+              href="/CV_Putu_Bagus_Sastrawan.pdf"
+              download="CV_Putu_Bagus_Sastrawan.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 mx-4 mt-2 px-4 py-3 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 transition-all duration-200"

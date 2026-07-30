@@ -32,7 +32,7 @@ function ContactSection() {
               Message Sent! 🎉
             </h3>
             <p className="text-slate-600 dark:text-slate-400 mb-8">
-              Thank you for reaching out. I'll get back to you as soon as possible!
+              Thank you for reaching out. I&apos;ll get back to you as soon as possible!
             </p>
             
             <a
@@ -60,15 +60,15 @@ function ContactSection() {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-teal-500 to-emerald-500 mx-auto mt-4 rounded-full" />
           <p className="mt-4 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            Have a project in mind or want to collaborate? Let's connect!
+            Have a project in mind or want to collaborate? Let&apos;s connect!
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
-          {/* Left Side - Contact Info (Semua dalam satu kotak) */}
+          {/* Left Side - Contact Info */}
           <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-slate-200 dark:border-slate-700">
             <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">
-              Let's Connect
+              Let&apos;s Connect
             </h3>
             <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed text-sm">
               Feel free to reach out through any of these platforms:
@@ -81,11 +81,11 @@ function ContactSection() {
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
               </span>
               <span className="text-sm font-medium text-emerald-700 dark:text-emerald-400">
-                Available for Freelance & Full-time
+                Available for Freelance &amp; Full-time
               </span>
             </div>
 
-            {/* Contact Items - Semua dalam satu list */}
+            {/* Contact Items */}
             <div className="space-y-3">
               {/* Email */}
               <a

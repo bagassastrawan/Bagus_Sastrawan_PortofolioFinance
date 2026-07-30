@@ -44,7 +44,7 @@ const AboutSection = () => {
             {/* Main Image Container */}
             <div className="relative w-full max-w-md h-[420px] rounded-2xl overflow-hidden shadow-2xl border border-slate-200/60 dark:border-slate-700/60 bg-slate-200 dark:bg-slate-800">
               <Image
-                src="/avatar.png" // Menggunakan file avatar milikmu
+                src="/avatar.png"
                 alt="Putu Bagus Sastrawan"
                 fill
                 priority
@@ -61,7 +61,7 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <p className="text-xs text-slate-500 dark:text-slate-400 font-medium uppercase tracking-wider">Years of</p>
-                  <p className="font-bold text-slate-900 dark:text-white text-base">Coding & Design</p>
+                  <p className="font-bold text-slate-900 dark:text-white text-base">Coding &amp; Design</p>
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@ const AboutSection = () => {
           <div className="lg:col-span-7 space-y-8">
             <div>
               <span className="text-teal-600 dark:text-teal-400 font-semibold text-sm tracking-wider uppercase">
-                Frontend Developer & UI/UX Specialist
+                Frontend Developer &amp; UI/UX Specialist
               </span>
               <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">
                 Crafting functional web experiences with modern tech stack.
@@ -79,7 +79,7 @@ const AboutSection = () => {
             </div>
 
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-base sm:text-lg">
-              Hi! I'm <strong className="text-slate-900 dark:text-white font-semibold">Putu Bagus Sastrawan</strong>. I build clean, high-performance web applications and design intuitive interfaces. My work focuses on connecting technical backend capabilities with sleek frontend user experience.
+              Hi! I&apos;m <strong className="text-slate-900 dark:text-white font-semibold">Putu Bagus Sastrawan</strong>. I build clean, high-performance web applications and design intuitive interfaces. My work focuses on connecting technical backend capabilities with sleek frontend user experience.
             </p>
 
             {/* Personal Info Grid */}
@@ -105,7 +105,7 @@ const AboutSection = () => {
             {/* Skills & Technologies Section */}
             <div className="pt-4 border-t border-slate-200 dark:border-slate-800">
               <h4 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-4">
-                Technologies & Tools
+                Technologies &amp; Tools
               </h4>
               <div className="flex flex-wrap gap-2.5">
                 {skills.map((skill, index) => (

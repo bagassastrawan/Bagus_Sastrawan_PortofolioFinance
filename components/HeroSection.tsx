@@ -89,7 +89,7 @@ const HeroSection = () => {
             {/* Main Headline with Typing Effect */}
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-slate-900 dark:text-white leading-[1.1]">
-                <span className="block">I'm a</span>
+                <span className="block">I&apos;m a</span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-emerald-500 to-teal-600 dark:from-teal-400 dark:via-emerald-400 dark:to-teal-400 bg-[length:200%_auto] animate-gradient">
                   {text}
                   <span className="inline-block w-1 h-8 sm:h-10 lg:h-12 ml-1 bg-teal-500 animate-pulse"></span>
@@ -100,7 +100,7 @@ const HeroSection = () => {
               </p>
             </div>
 
-            {/* CTA Buttons - Download CV dengan nama yang benar */}
+            {/* CTA Buttons - Download CV */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
               <a
                 href="/CV_Putu_Bagus_Sastrawan.pdf"
