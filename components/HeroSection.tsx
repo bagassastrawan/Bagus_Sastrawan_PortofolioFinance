@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
 import { HiArrowDown, HiOutlineDocumentDownload } from "react-icons/hi";
 
@@ -9,12 +9,13 @@ const HeroSection = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const roles = [
+  // Pindahkan roles ke dalam useMemo agar tidak re-render setiap kali
+  const roles = useMemo(() => [
     "Frontend Developer",
     "UI/UX Designer",
     "Web Developer",
     "App Developer"
-  ];
+  ], []);
 
   useEffect(() => {
     const handleTyping = () => {

@@ -25,13 +25,15 @@ const SlideUp: React.FC<SlideUpProps> = ({ children, offset = "0px", delay = 0 }
       }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    const currentRef = ref.current; // Simpan ref.current ke variabel
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, [offset]);
