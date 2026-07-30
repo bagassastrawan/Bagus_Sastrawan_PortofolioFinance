@@ -1,36 +1,54 @@
 "use client";
+import React, { useEffect, useRef, useState } from "react";
 
-import React, { useEffect, useRef, ReactNode } from "react";
-interface Props {
+interface SlideUpProps {
+  children: React.ReactNode;
   offset?: string;
-  children?: ReactNode;
-  // any props that come into the component
+  delay?: number;
 }
 
-export default function SlideUp({ children, offset = "0px" }: Props) {
-  const ref = useRef(null);
+const SlideUp: React.FC<SlideUpProps> = ({ children, offset = "0px", delay = 0 }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.remove("opacity-0");
-            entry.target.classList.add("animate-slideUpCubiBezier");
-          }
-        });
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
       },
-      { rootMargin: offset }
+      {
+        rootMargin: offset,
+        threshold: 0.1,
+      }
     );
 
     if (ref.current) {
       observer.observe(ref.current);
     }
-  }, [ref]);
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [offset]);
 
   return (
-    <div ref={ref} className="relative opacity-0">
+    <div
+      ref={ref}
+      className={`transition-all duration-700 ease-out ${
+        isVisible
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 translate-y-10"
+      }`}
+      style={{ transitionDelay: `${delay}ms` }}
+    >
       {children}
     </div>
   );
-}
+};
+
+export default SlideUp;
